@@ -33,7 +33,7 @@ app.use(
 )
 app.use(helmet())
 const corsOptions = {
-	origin: 'http://localhost:3000',
+	origin: ['http://localhost:3000', 'https://kg-task4-frontend.herokuapp.com'],
 	credentials: true,
 }
 app.use(cors(corsOptions))
